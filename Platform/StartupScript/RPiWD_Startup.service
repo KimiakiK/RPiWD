@@ -1,0 +1,11 @@
+[Unit]
+Description=RPiWD startup service
+
+[Service]
+ExecStart=/opt/RPiWD/Platform/StartupScript/StartupScript.sh
+WorkingDirectory=/opt/RPiWD/Platform
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
