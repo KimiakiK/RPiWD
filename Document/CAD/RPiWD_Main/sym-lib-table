@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RPiWD_Main)(type Legacy)(uri ${KIPRJMOD}/RPiWD_Main.lib)(options "")(descr ""))
+  (lib (name RPiWD_Controller)(type Legacy)(uri /Users/kimi/Documents/KiCad/RPiWD_Controller/RPiWD_Controller.lib)(options "")(descr ""))
+)

@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RPiWD_Controller:AnalogJoyStick RV1
+U 1 1 5DED3BB7
+P 5550 4100
+F 0 "RV1" H 5550 4250 50  0000 C CNN
+F 1 "AnalogJoyStick" H 5350 3800 50  0000 C CNN
+F 2 "RPiWD_Controller:AnalogJoyStick" H 5550 4300 50  0001 C CNN
+F 3 "" H 5550 4300 50  0001 C CNN
+	1    5550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DED4BAC
+P 6550 3900
+F 0 "SW1" H 6550 4050 50  0000 C CNN
+F 1 "SW_Push" H 6550 3050 50  0000 C CNN
+F 2 "RPiWD_Controller:SW_SMD" H 6550 4100 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+	1    6550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DED5B61
+P 6550 4150
+F 0 "SW2" H 6550 4300 50  0000 C CNN
+F 1 "SW_Push" H 6550 4344 50  0001 C CNN
+F 2 "RPiWD_Controller:SW_SMD" H 6550 4350 50  0001 C CNN
+F 3 "~" H 6550 4350 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5DED73E6
+P 6550 4400
+F 0 "SW3" H 6550 4550 50  0000 C CNN
+F 1 "SW_Push" H 6550 4594 50  0001 C CNN
+F 2 "RPiWD_Controller:SW_SMD" H 6550 4600 50  0001 C CNN
+F 3 "~" H 6550 4600 50  0001 C CNN
+	1    6550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5DED7C5C
+P 6550 4650
+F 0 "SW4" H 6550 4800 50  0000 C CNN
+F 1 "SW_Push" H 6550 4844 50  0001 C CNN
+F 2 "RPiWD_Controller:SW_SMD" H 6550 4850 50  0001 C CNN
+F 3 "~" H 6550 4850 50  0001 C CNN
+	1    6550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 5DED8D21
+P 5900 3200
+F 0 "J1" V 5950 3150 50  0000 C CNN
+F 1 "Connector" V 5800 2550 50  0000 C CNN
+F 2 "RPiWD_Controller:Connecter_SMD_8pin" H 5900 3200 50  0001 C CNN
+F 3 "~" H 5900 3200 50  0001 C CNN
+	1    5900 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3400 6300 3900
+Wire Wire Line
+	6300 3900 6350 3900
+Wire Wire Line
+	6200 3400 6200 4150
+Wire Wire Line
+	6200 4150 6350 4150
+Wire Wire Line
+	6100 3400 6100 4400
+Wire Wire Line
+	6100 4400 6350 4400
+Wire Wire Line
+	6000 3400 6000 4650
+Wire Wire Line
+	6000 4650 6350 4650
+$Comp
+L power:GND #PWR02
+U 1 1 5DEE6B44
+P 5600 3400
+F 0 "#PWR02" H 5600 3150 50  0001 C CNN
+F 1 "GND" H 5605 3227 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3400 5700 3650
+Wire Wire Line
+	5700 3650 5400 3650
+Wire Wire Line
+	5400 3650 5400 3400
+Wire Wire Line
+	5450 4100 5400 4100
+Wire Wire Line
+	5400 4100 5400 3650
+Connection ~ 5400 3650
+Wire Wire Line
+	5450 4300 5400 4300
+Wire Wire Line
+	5400 4300 5400 4100
+Connection ~ 5400 4100
+Wire Wire Line
+	5800 4000 5550 4000
+Wire Wire Line
+	5800 3400 5800 4000
+Wire Wire Line
+	5900 4200 5550 4200
+Wire Wire Line
+	5900 3400 5900 4200
+$Comp
+L power:GND #PWR04
+U 1 1 5DEED7AB
+P 6750 4850
+F 0 "#PWR04" H 6750 4600 50  0001 C CNN
+F 1 "GND" H 6755 4677 50  0000 C CNN
+F 2 "" H 6750 4850 50  0001 C CNN
+F 3 "" H 6750 4850 50  0001 C CNN
+	1    6750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3900 6750 4150
+Connection ~ 6750 4150
+Wire Wire Line
+	6750 4150 6750 4400
+Connection ~ 6750 4400
+Wire Wire Line
+	6750 4400 6750 4650
+Connection ~ 6750 4650
+Wire Wire Line
+	6750 4650 6750 4850
+$Comp
+L power:GND #PWR03
+U 1 1 5DEEE331
+P 5700 4500
+F 0 "#PWR03" H 5700 4250 50  0001 C CNN
+F 1 "GND" H 5705 4327 50  0000 C CNN
+F 2 "" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0001 C CNN
+	1    5700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4300 5700 4300
+Wire Wire Line
+	5700 4300 5700 4500
+Wire Wire Line
+	5650 4100 5700 4100
+Wire Wire Line
+	5700 4100 5700 4300
+Connection ~ 5700 4300
+$Comp
+L power:VPP #PWR?
+U 1 1 5DEFA06C
+P 5400 3400
+F 0 "#PWR?" H 5400 3250 50  0001 C CNN
+F 1 "VPP" H 5415 3573 50  0000 C CNN
+F 2 "" H 5400 3400 50  0001 C CNN
+F 3 "" H 5400 3400 50  0001 C CNN
+	1    5400 3400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RPiWD_Controller)(type Legacy)(uri ${KIPRJMOD}/RPiWD_Controller.lib)(options "")(descr ""))
+)
